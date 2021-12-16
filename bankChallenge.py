@@ -11,8 +11,9 @@ class Account():
         print(f"Your balance is {self.balance}")
         
     # Creating functions to update balance based on deposit amount    
-    def deposit(self,depositAmount):
-        self.balance = self.balance + depositAmount
+    def deposit(self,depAmount):
+        self.balance = self.balance + depAmount
+
         print(f"Your new balance is {self.balance}.")
     
     # Creating functions to update balance based on withdrawal amount    
@@ -30,11 +31,9 @@ class Account():
 accountOne = Account("Jose", 100)
 
 print(f"Account Name: {accountOne.name}\nAccount Balance: ${accountOne.balance}")
-
-depositAmount = int(input("Enter a deposit amount: "))
-accountOne.deposit(depositAmount)
+depAmount = int(input("Enter a deposit amount: "))
+accountOne.deposit(depAmount)
 
 withdraw = int(input("Enter amount to withdraw: "))
 accountOne.withdrawal(withdraw)
 
-print(accountOne.balance)
