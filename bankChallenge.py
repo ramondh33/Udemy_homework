@@ -7,19 +7,19 @@ class Account():
         self.balance = balance
 
 # Creating functions to see balance
-    def accBalance(self):
+    def Account_Balance(self):
         print(f"Your balance is {self.balance}")
 
-# Creating functions to update balance based on deposit amount    
-    def deposit(self,depAmount):
+# Creating functions to update balance based on Deposit amount    
+    def Deposit(self,depAmount):
         self.balance = self.balance + depAmount
 
         print(f"Your new balance is {self.balance}.")
 
-# Creating functions to update balance based on withdrawal amount    
-    def withdrawal(self,withdraw):
+# Creating functions to update balance based on Withdrawal amount    
+    def Withdrawal(self,withdraw):
 
-# If statement checking if funds are available to withdrawal
+# If statement checking if funds are available to Withdrawal
         if withdraw > self.balance:
             print("Insufficient Funds!")
 
@@ -31,9 +31,9 @@ class Account():
 accountOne = Account("Jose", 100)
 
 print(f"Account Name: {accountOne.name}\nAccount Balance: ${accountOne.balance}")
-depAmount = int(input("Enter a deposit amount: "))
-accountOne.deposit(depAmount)
+depAmount = int(input("Enter a Deposit amount: "))
+accountOne.Deposit(depAmount)
 
 withdraw = int(input("Enter amount to withdraw: "))
-accountOne.withdrawal(withdraw)
+accountOne.Withdrawal(withdraw)
 
