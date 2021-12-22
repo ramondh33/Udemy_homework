@@ -1,2 +1,0 @@
-# Card
-# suit, rank, value
